@@ -1,0 +1,19 @@
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.App-data {
+  margin: auto;
+  padding: 1em;
+  background-color: #EEE;
+  border: 1px solid #CCC;
+}
+
+.App-form {
+  text-align: center;
+  font-size: 1.4em;
+}
