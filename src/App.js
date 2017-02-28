@@ -16,6 +16,10 @@ class App extends Component {
   }
 
   componentWillMount() {
+    this.dataRef.on('child_added', (snapshot) => console.log('child_added', snapshot.val()));
+    this.dataRef.on('child_removed', (snapshot) => console.log('child_removed', snapshot.val()));
+    this.dataRef.on('child_changed', (snapshot) => console.log('child_changed', snapshot.val()));
+
     this.dataRef.on('value', (snapshot) => {
       const data = Object.entries(snapshot.val())
                          .map(([ key, value ]) => ({ key, value }));
