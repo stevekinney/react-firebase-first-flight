@@ -17,9 +17,16 @@ class App extends Component {
 
   componentWillMount() {
     this.dataRef.on('value', (snapshot) => {
-      this.setState({
-        data: snapshot.val()
+      let data = [];
+
+      snapshot.forEach(s => {
+        data = [
+          { key: s.key, value: s.val() },
+          ...data
+        ];
       });
+
+      this.setState({ data });
     });
   }
 
