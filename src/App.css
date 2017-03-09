@@ -1,4 +1,4 @@
-.App-header {
+.App--header {
   background-color: #222;
   height: 150px;
   padding: 20px;
@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.App-data {
+.App--data {
   margin: auto;
   padding: 1em;
   background-color: #EEE;
